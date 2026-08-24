@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Huy Hoàng - Bán Chìa Khóa</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin-bottom: 8px;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .banner {
+      background: #2563eb;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .banner h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .products {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+    }
+
+    .products h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px #ccc;
+      text-align: center;
+    }
+
+    .key {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .price {
+      color: #e11d48;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    button {
+      border: none;
+      background: #16a34a;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #15803d;
+    }
+
+    footer {
+      background: #111827;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>🔑 Shop Huy Hoàng</h1>
+    <p>Website bán chìa khóa</p>
+
+    <nav>
+      <a href="#">Trang chủ</a>
+      <a href="#sanpham">Sản phẩm</a>
+      <a href="#lienhe">Liên hệ</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h2>🔑 Chìa khóa chất lượng</h2>
+    <p>Nhiều mẫu chìa khóa - Giá tốt - Phục vụ tận tình</p>
+  </section>
+
+  <section class="products" id="sanpham">
+    <h2>Sản phẩm</h2>
+
+    <div class="list">
+
+      <div class="card">
+        <div class="key">🔑</div>
+        <h3>Chìa khóa nhà</h3>
+        <p>Chìa khóa chất lượng cao</p>
+        <div class="price">50.000đ</div>
+        <button onclick="mua('Chìa khóa nhà')">Mua ngay</button>
+      </div>
+
+      <div class="card">
+        <div class="key">🗝️</div>
+        <h3>Chìa khóa xe</h3>
+        <p>Chìa khóa xe phổ biến</p>
+        <div class="price">80.000đ</div>
+        <button onclick="mua('Chìa khóa xe')">Mua ngay</button>
+      </div>
+
+      <div class="card">
+        <div class="key">🔐</div>
+        <h3>Chìa khóa cao cấp</h3>
+        <p>Mẫu đẹp và bền</p>
+        <div class="price">120.000đ</div>
+        <button onclick="mua('Chìa khóa cao cấp')">Mua ngay</button>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="lienhe">
+    <h3>Shop Huy Hoàng</h3>
+    <p>📞 Liên hệ: 0123 456 789</p>
+    <p>© 2026 Shop Huy Hoàng</p>
+  </footer>
+
+  <script>
+    function mua(sanPham) {
+      alert("Bạn đã chọn: " + sanPham);
+    }
+  </script>
+
+</body>
+      </html>
